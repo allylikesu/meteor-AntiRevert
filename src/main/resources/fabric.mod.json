@@ -1,27 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "meteor-antirevert",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Anti-Revert (Meteor Addon)",
+  "description": "Prevents reverting superillegals, made for 0b0t.org.",
   "authors": [
-    "seasnail"
+    "zt8"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/allylikesu/meteor-AntiRevert"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "lol.zt8.AntiRevertAddon.AntiRevertAddon"
     ]
   },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
   "custom": {
-    "meteor-client:color": "225,25,25"
+    "meteor-client:color": "203,166,247"
   },
   "depends": {
     "java": ">=21",

@@ -26,7 +26,7 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${properties["loader_version"] as String}")
 
     // Meteor
-    modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
+    modImplementation("meteordevelopment:meteor-client:0.5.6")
 }
 
 tasks {
@@ -54,12 +54,12 @@ tasks {
     }
 
     java {
-        sourceCompatibility = JavaVersion.VERSION_21
-        targetCompatibility = JavaVersion.VERSION_21
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     withType<JavaCompile> {
         options.encoding = "UTF-8"
-        options.release = 21
+        options.release = 17
     }
 }
