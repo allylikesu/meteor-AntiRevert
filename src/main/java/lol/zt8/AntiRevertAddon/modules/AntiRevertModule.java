@@ -36,7 +36,9 @@ public class AntiRevertModule extends Module {
         "bedrock",
         "reinforced_deepslate",
         "end_portal_frame",
-        "command_block_minecart"
+        "command_block_minecart",
+        "spawner",
+        "debug_stick"
         );
 
     /**
