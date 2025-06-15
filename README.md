@@ -45,6 +45,20 @@ Items with the Unbreakable tag (toggleable in module settings)
 
 **And ANY shulker box with an illegal item inside!**
 
+### How does it prevent reverting?
+
+On 0b0t, the AntiIllegals is configured to not instantly revert illegals in a player's enderchest, only reverting if the
+item is interacted with.
+
+This addon prevents interacting (Left-clicking, right-clicking, shift-clicking, moving with number keys) with illegal 
+items while they are in containers. It cancels the ClickSlotC2S packet, then closes the container gui to prevent de-syncing.
+It does NOT prevent reverting illegals in your inventory (I believe there is an extra packet sent?) or reverting illegals 
+in item frames (yet, keep an eye out). 
+
+It must be noted that the act of opening a chest, placed shulker, furnace, dispenser, etc. will automatically revert 
+any illegals inside, which this addon can do nothing to prevent, as placed containers do not send the data of their contents
+until they are opened.
+
 
 ## License
 
